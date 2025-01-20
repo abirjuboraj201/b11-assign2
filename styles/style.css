@@ -6,22 +6,25 @@
   font-style: normal;
 }
 
-/* shared styles */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header,main{
-    max-width:1160px;
-    margin: 0 auto;
-
-}
-
 header{
-    margin-top: 20px;
+    max-width:1160px;
+    margin: 20px auto;
+
 }
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: url('/assets/bg.png');
+}
+
+/* shared styles */
 
 .display-flexing{
     display: flex;
@@ -124,10 +127,86 @@ hr{
     margin-bottom: 20px;
 
 }
-.banner-img{
-    /* width: 100%; */
-}
+
+
 /* main styles */
+
+/* curriculum section style */
+.Curriculum-section{
+    max-width: 1150px;
+    margin: 0px 140px;
+}
+.card-container{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 28px;
+}
+.section-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.8rem;
+    margin-top: 100px;
+}
+.card{
+    max-width: 360px;
+    text-align: center;
+    padding: 50px 40px;
+    border-radius: 19px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+#grad-1{
+    background: linear-gradient(to bottom, #DEF5FF, #ffffff 40%);
+}
+#grad-2{
+    background: linear-gradient(to bottom, #FFF4DC, #ffffff 40% );
+}
+#grad-3{
+    background: linear-gradient(to bottom, #f7ebff, #ffffff 40%);
+}
+.card-title{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+.card-description{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #808080;
+    margin: 32px auto;
+    
+}
+
+.card-btn{
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    background-color: white;
+}
+.btn-color-1{
+    color: #F0AA00;
+}
+.btn-color-2{
+    color: #8700FF;
+}
+
+.btn-container{
+    margin-top: 80px;
+    text-align: center;
+}
+.left,.right{
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+    border: none;
+    border-radius: 50%;
+}
+.fa-chevron-left, .fa-chevron-right{
+    color: white;
+    font-size: 1.25rem;
+}
 
 /* footer style */
 
@@ -160,17 +239,43 @@ hr{
     }
     .banner{
         text-align: center;
-        width: 400px;
+        width: 350px;
     }
     .banner-title{
-        font-size: 2.25rem;
+        font-size: 2.2rem;
     }
     .banner-img img{
-        width: 80%;
-        margin: 10px 40px;
+        width: 356px;
+        margin: 10px 25px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-content: center;
        
+    }
+
+    /* curriculum section style */
+    .Curriculum-section{
+        width: 100%;
+        margin: 0px auto ;
+        justify-items: center;
+        align-items: center;
+        
+    }
+    .section-title{
+        font-size: 1.8rem;
+        margin-top: 60px;
+    }
+    .card-container{
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        justify-items: center;
+        margin-top: 50px;
+    }
+    .card{
+        width: 100%;
+    }
+    
+    .btn-container{
+        display: none;
     }
 }
