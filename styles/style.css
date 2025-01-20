@@ -7,12 +7,89 @@
 }
 
 /* shared styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header,main{
+    max-width:1160px;
+    margin: 0 auto;
 
+}
+
+header{
+    margin-top: 20px;
+}
+
+.display-flexing{
+    display: flex;
+}
 
 /* header styles */
 
 /* navigation bar styles */
 
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.menu-bar{
+    visibility: hidden;
+    font-size: x-large;
+}
+.school-logo{
+    gap: 10px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.nav-links{
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    
+}
+.nav-links li{
+    list-style: none;
+    
+}
+.nav-links li a{
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1.25rem;
+
+}
+.home{
+    color: orange;
+}
+.about{
+    color: skyblue;
+}
+.facilities{
+    color: #05D4DF;
+}
+.admission{
+    color: #5D58EF;
+}
+.nav-btn{
+    padding: 10px 50px;
+    border-radius: 12px;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+hr{
+    visibility: hidden;
+    border: 1px solid orange;
+    margin-top:10px;
+}
 
 
 
@@ -20,3 +97,26 @@
 
 
 /* main styles */
+
+/* footer style */
+
+
+/* responsive styles */
+
+@media screen and (max-width:576px) {
+    .navbar{
+        justify-content: space-around;
+        
+    }
+    .school, .nav-links,.nav-btn{
+        display: none;
+    }
+    
+    .menu-bar{
+        visibility: visible;
+    }
+    hr{
+        visibility: visible;
+    }
+    
+}
