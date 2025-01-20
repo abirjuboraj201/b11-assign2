@@ -23,6 +23,15 @@ main{
     margin: 0 auto;
     background-image: url('/assets/bg.png');
 }
+footer{
+    max-width: 1600px;
+    height: 100%;
+    margin: 0px auto;
+    background-color: #01ACFD;
+    padding: 123px 228px 174px 140px;
+}
+
+
 
 /* shared styles */
 
@@ -51,7 +60,7 @@ main{
 }
 .menu-bar{
     display: none;
-    font-size: x-large;
+    font-size: 24px;
 }
 .school-logo{
     gap: 10px;
@@ -193,7 +202,7 @@ hr{
 }
 
 .btn-container{
-    margin-top: 80px;
+    margin: 80px;
     text-align: center;
 }
 .left,.right{
@@ -209,8 +218,58 @@ hr{
 }
 
 /* footer style */
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+.kids-education{
+    width:400px ;
+}
+.education-header{
+    align-items: center;
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+.education-title{
+    font-weight: bold;
+    font-size: 2.2rem;
+    color: white;
+}
+.education-description{
+    font-size: 1.25rem;
+    color: #FFFFFF;
+}
+.about-title{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 30px;
+}
+.about-links{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    gap: 20px;
+}
+.about-links li{
+    list-style: none;
+}
+.about-links a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+       
+}
 
-
+.touch-title{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 30px;
+}
+.websites{
+    gap: 10px;
+}
 /* responsive styles */
 
 @media screen and (max-width:576px) {
@@ -228,6 +287,8 @@ hr{
     }
     hr{
         visibility: visible;
+        width: 100%;
+        
     }
     
     /* banner style */
@@ -245,8 +306,8 @@ hr{
         font-size: 2.2rem;
     }
     .banner-img img{
-        width: 356px;
-        margin: 10px 25px;
+        width: 340px;
+        margin: 10px 16px;
         display: flex;
         justify-content: center;
         align-content: center;
@@ -272,10 +333,25 @@ hr{
         margin-top: 50px;
     }
     .card{
-        width: 100%;
+        width: 350px;
     }
     
     .btn-container{
         display: none;
+    }
+
+
+    /* footer style */
+    footer{
+        padding: 20px;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        gap: 25px;
+        
+    }
+    .kids-education{
+        width: 100%;
     }
 }
