@@ -12,6 +12,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 header,main{
     max-width:1160px;
     margin: 0 auto;
@@ -26,6 +27,16 @@ header{
     display: flex;
 }
 
+.btn-primary{
+    border: none;
+    border-radius: 12px;
+    padding: 10px 45px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+    background-color: black;
+}
+
 /* header styles */
 
 /* navigation bar styles */
@@ -36,7 +47,7 @@ header{
    
 }
 .menu-bar{
-    visibility: hidden;
+    display: none;
     font-size: x-large;
 }
 .school-logo{
@@ -47,7 +58,6 @@ header{
 }
 
 .nav-links{
-    /* text-align: center; */
     display: flex;
     justify-content: center;
     
@@ -63,11 +73,11 @@ header{
     font-size: 1.25rem;
 
 }
-.home{
+.orange{
     color: orange;
 }
-.about{
-    color: skyblue;
+.skyblue{
+    color: rgb(44, 182, 236);
 }
 .facilities{
     color: #05D4DF;
@@ -94,8 +104,29 @@ hr{
 
 
 /* banner style */
+.banner-container{
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.banner{
+    width: 640px;
+}
+.banner-title{
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
 
+.banner-description{
+    font-size: 1.25rem;
+    margin-bottom: 20px;
 
+}
+.banner-img{
+    /* width: 100%; */
+}
 /* main styles */
 
 /* footer style */
@@ -104,6 +135,7 @@ hr{
 /* responsive styles */
 
 @media screen and (max-width:576px) {
+    /* navigation bar style */
     .navbar{
         justify-content: space-around;
         
@@ -113,10 +145,32 @@ hr{
     }
     
     .menu-bar{
-        visibility: visible;
+        display: inline;
     }
     hr{
         visibility: visible;
     }
     
+    /* banner style */
+    .banner-container{
+        flex-direction: column-reverse;
+        margin-top: 20px;
+       
+        
+    }
+    .banner{
+        text-align: center;
+        width: 400px;
+    }
+    .banner-title{
+        font-size: 2.25rem;
+    }
+    .banner-img img{
+        width: 80%;
+        margin: 10px 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
 }
