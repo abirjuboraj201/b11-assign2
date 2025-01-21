@@ -240,6 +240,7 @@ hr{
 
 
 .left-story{
+    width: 540px;
     height: 100%;
     border-radius: 16px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -275,7 +276,7 @@ hr{
 .right-story div{
     border-radius: 16px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    height: calc(100% - 5px);
+    height: calc(100% - 10px);
 }
 .story-subtitle{
     margin: 24px 55px 34px 38px;
@@ -286,13 +287,17 @@ hr{
     border: none;
     color: white;
     background-color: #3CD8E8;
-    margin-left: 40px;
-    /* margin-top: -10px; */
+    position: relative;
+    top: -20px;
+    left: 35px ;
 }
 .view-btn{
     display: block;
     margin: 80px auto;
 }
+
+    
+    
 
 /* footer style */
 .footer-container{
