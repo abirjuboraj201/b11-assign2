@@ -23,7 +23,6 @@ header{
 main{
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0px 120px;
     background-image: url('/assets/bg.png');
   
 }
@@ -147,12 +146,9 @@ hr{
 /* main styles */
 
 /* curriculum section style */
-.Curriculum-section{
-    /* max-width: 1440px; */
-    /* margin: 0 auto; */
-}
+
 .card-container{
-    margin-top: 80px;
+    margin: 110px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
@@ -224,16 +220,13 @@ hr{
 }
 /* story section style */
 
-.stories{
-    /* text-align: center; */
-    /* background: linear-gradient(to top, #FEA301 0%, #FFFFFF 100% );  */
-}
+
 .stories-container{
     display: flex;
     gap: 30px;
     width: 1160px;
     height: 630px;
-    margin: 30px 10px;
+    margin: 50px 130px;
    
    
 }
@@ -242,6 +235,7 @@ hr{
 .left-story{
     width: 540px;
     height: 100%;
+    background-color: white;
     border-radius: 16px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -262,10 +256,10 @@ hr{
     color: #666666;
     margin: 0px 65px 30px 38px;
 }
+
 .right-story{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-  
     gap: 18px;
 
 }
@@ -274,6 +268,7 @@ hr{
     border-top-right-radius: 16px;
 }
 .right-story div{
+    background-color: white;
     border-radius: 16px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: calc(100% - 10px);
@@ -281,15 +276,25 @@ hr{
 .story-subtitle{
     margin: 24px 55px 34px 38px;
 }
-.story-btn{
-    padding: 10px 20px;
-    border-radius: 48px;
-    border: none;
+.story-date{
     color: white;
-    background-color: #3CD8E8;
+    padding: 15px 20px;
+    border-radius: 20px;
     position: relative;
-    top: -20px;
-    left: 35px ;
+    top: -10px;
+    left: 40px;
+}
+.story-date-right{
+    padding: 10px 18px;
+}
+.date-color-1{
+    background-color: #3CD8E8;
+}
+.date-color-2{
+    background-color: #95B226;
+}
+.date-color-3{
+    background-color: #5D58F0;
 }
 .view-btn{
     display: block;
@@ -355,6 +360,7 @@ hr{
 /* responsive styles */
 
 @media screen and (max-width:576px) {
+   
     /* navigation bar style */
     .navbar{
         justify-content: space-around;
@@ -369,16 +375,13 @@ hr{
     }
     hr{
         visibility: visible;
-        width: 100%;
-        
+        width: 100%;  
     }
     
     /* banner style */
     .banner-container{
         flex-direction: column-reverse;
-        margin-top: 20px;
-       
-        
+        margin-top: 20px;   
     }
     .banner{
         text-align: center;
@@ -386,15 +389,17 @@ hr{
     }
     .banner-title{
         font-size: 2.1rem;
+        margin-top: 10px;
+    }
+    .banner-description{
+        font-size: 0.9rem;
     }
     .banner-img{
-        width: 330px;
-        /* margin: 10px 16px; */
-        display: flex;
-
-        justify-content: center;
-         
-       
+        width: 330px;   
+    }
+    .btn-primary{
+        font-size: 1rem;
+        padding: 10px 20px;
     }
     
     /* curriculum section style */
@@ -406,8 +411,8 @@ hr{
         
     }
     .section-title{
-        font-size: 1.8rem;
-        margin-top: 60px;
+        font-size: 1.6rem;
+        margin-top: 40px;
     }
     .card-container{
         grid-template-columns: repeat(1,1fr);
@@ -418,13 +423,58 @@ hr{
     .card{
         width: 350px;
     }
+    .card-title{
+        font-size: 1.1rem;
+    }
+    .card-description, .card-btn{
+        font-size: 0.8rem;
+    }
     
     .btn-container{
         display: none;
     }
 
+    /* stories style */
+    
+    .stories-container{
+        margin: 10px auto;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    } 
+    .left-story{
+        display: none;
+    }
+    .right-story{
+        width: 360px;
+        height: 380px;
+        margin-top: 20px;
+        gap: 10px;       
+    }
+    .right-story div{
+        width: 170px;
+        height: 180px;
+    }
+    .right-story img{
+        width: 100%;
+    }
+    .story-subtitle{
+        width: 150px;
+        font-size: 10px;
+        margin: 10px 0px 17px 16px;
+    }
+    .story-date{
+        left: 15px;
+        top: -15px;
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+    .view-btn{
+        font-size: 1rem;
+        margin-top: 30px;
+    }
 
-    /* footer style */
+     /* footer style */
     footer{
         padding: 20px;
     }
@@ -436,5 +486,25 @@ hr{
     }
     .kids-education{
         width: 100%;
+    }
+    .education-title{
+        font-size: 2.1rem;
+    }
+    .education-description{
+        font-size: 1rem;
+    }
+
+    .about-title{
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+
+    .about-links a{
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .touch-title{
+        font-size: 1.3rem;
     }
 }
