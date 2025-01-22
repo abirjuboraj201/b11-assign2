@@ -23,11 +23,12 @@ header{
 main{
     max-width: 1440px;
     margin: 0 auto;
-    background-image: url('/assets/bg.png');
+    background-image: url("/assets/bg.png");
+    background-repeat: no-repeat;
   
 }
 footer{
-    max-width: 1600px;
+    max-width: 1540px;
     height: 100%;
     margin: 0px auto;
     background-color: #01ACFD;
@@ -220,7 +221,10 @@ hr{
 }
 /* story section style */
 
-
+.stories{
+    padding: 100px 0px;
+    background: linear-gradient(to top, rgba(254, 163, 1, 0.3) 0%, rgba(255, 255, 255, 0.7) 100%), url('/assets/bg.png')
+}
 .stories-container{
     display: flex;
     gap: 30px;
@@ -260,7 +264,8 @@ hr{
 .right-story{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 18px;
+    gap: 30px;
+    justify-content: center;
 
 }
 .right-story img{
@@ -435,7 +440,9 @@ hr{
     }
 
     /* stories style */
-    
+    .stories{
+        padding: 0px 0px 50px;
+    }
     .stories-container{
         margin: 10px auto;
         justify-content: center;
@@ -471,7 +478,7 @@ hr{
     }
     .view-btn{
         font-size: 1rem;
-        margin-top: 30px;
+        margin: 30px auto 10px;
     }
 
      /* footer style */
