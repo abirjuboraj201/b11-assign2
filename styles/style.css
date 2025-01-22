@@ -356,6 +356,7 @@ marquee{
 .education-description{
     font-size: 1.25rem;
     color: #FFFFFF;
+    text-align: ;
 }
 .about-title{
     font-weight: bold;
@@ -451,7 +452,7 @@ marquee{
     .card-container{
         grid-template-columns: repeat(1,1fr);
         justify-items: center;
-        margin: 40px;
+        margin: 25px;
     }
   
     .card-title{
