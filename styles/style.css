@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 .quicksand-font {
   font-family: "Quicksand", serif;
@@ -6,14 +6,13 @@
   font-style: normal;
 }
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* body{
-    overflow-x: hidden;
-} */
+
 header{
     max-width:1440px;
     margin: 0 auto;
@@ -25,7 +24,6 @@ main{
     margin: 0 auto;
     background-image: url("../assets/bg.png");
     background-repeat: no-repeat;
-    /* background-position:cover; */
     background-size: auto;
   
 }
@@ -127,10 +125,10 @@ marquee{
     color: orange;
 }
 .marquee-color-1{
-    color: #05D4DF;
+    color: #04969e;
 }
 .marquee-color-2{
-    color: aquamarine;
+    color:aqua;
 }
 .marquee-color-3{
     color: #01ACFD;
@@ -223,6 +221,9 @@ marquee{
     border: none;
     background-color: white;
 }
+.card-btn a{
+    text-decoration: none;
+}
 .btn-color-1{
     color: #F0AA00;
 }
@@ -257,11 +258,8 @@ marquee{
     display: flex;
     gap: 18px;
     height: 630px;
-    margin: 50px auto;
-   
-   
+    margin: 50px auto;  
 }
-
 
 .left-story{
     width: 100%;
@@ -270,17 +268,20 @@ marquee{
     border-radius: 16px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .left-story img{
     
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     
 }
+
 .left-story-title{
     font-weight: bold;
     font-size: 1.5rem;
     margin: 36px 38px;
 }
+
 .left-story-description{
     font-weight: 500;
     font-size: 1rem;
@@ -295,10 +296,12 @@ marquee{
     
 
 }
+
 .right-story img{
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
+
 .right-story div{
     background-color: white;
     border-radius: 16px;
@@ -306,10 +309,13 @@ marquee{
     height: calc(100% - 5px);
     position: relative;
 }
+
 .story-subtitle{
     margin: 24px 55px 34px 38px;
 }
+
 .story-date{
+    font-family: "Raleway", serif;
     color: white;
     padding: 15px 20px;
     border-radius: 20px;
@@ -317,26 +323,30 @@ marquee{
     top: -10px;
     left: 40px;
 }
+
 .story-date-right{
     padding: 10px 18px;
-}
+} 
+
 .date-color-1{
     background-color: #3CD8E8;
 }
+
 .date-color-2{
     background-color: #95B226;
 }
+
 .date-color-3{
     background-color: #5D58F0;
 }
+
 .view-btn{
     display: block;
     text-align: center;
     margin: 80px 0px;
 }
 
-    
-    
+ 
 
 /* footer style */
 .footer-container{
@@ -344,43 +354,50 @@ marquee{
     display: flex;
     justify-content: space-between;
 }
+
 .kids-education{
     max-width: 400px ;
 }
+
 .education-header{
     align-items: center;
     margin-bottom: 30px;
 }
+
 .education-title{
     font-weight: bold;
     font-size: 2.2rem;
     color: white;
 }
+
 .education-description{
     font-size: 1.25rem;
     color: #FFFFFF;
    
 }
+
 .about-title{
     font-weight: bold;
     font-size: 1.5rem;
     color: white;
     margin-bottom: 30px;
 }
+
 .about-links{
     display: grid;
     grid-template-rows: repeat(1,1fr);
     gap: 20px;
 }
+
 .about-links li{
     list-style: none;
 }
+
 .about-links a{
     text-decoration: none;
     color: white;
     font-weight: 500;
     font-size: 1.2rem;
-       
 }
 
 .touch-title{
@@ -389,9 +406,11 @@ marquee{
     color: white;
     margin-bottom: 30px;
 }
+
 .websites{
     gap: 10px;
 }
+
 /* responsive styles */
 
 @media screen and (max-width:576px) {
@@ -402,6 +421,7 @@ marquee{
         justify-content: space-around;
         
     }
+
     .school, .nav-links,.nav-btn{
         display: none;
     }
@@ -409,32 +429,40 @@ marquee{
     .menu-bar{
         display: inline;
     }
+
     hr{
         visibility: visible;
         width: 100%;  
     }
+
     marquee{
-    display: none;
+    margin: 10px 0px;
     }
+    
     /* banner style */
     .banner-container{
         flex-direction: column-reverse;
         margin-top: 20px;   
     }
+
     .banner{
         text-align: center;
         width: 350px;
     }
+
     .banner-title{
         font-size: 2.1rem;
         margin-top: 10px;
     }
+
     .banner-description{
         font-size: 0.9rem;
     }
+
     .banner-img{
         width: 330px;   
     }
+
     .btn-primary{
         font-size: 1rem;
         padding: 10px 20px;
@@ -448,10 +476,12 @@ marquee{
         align-items: center;
         
     }
+
     .section-title{
         font-size: 1.6rem;
         margin-top: 40px;
     }
+
     .card-container{
         grid-template-columns: repeat(1,1fr);
         justify-items: center;
@@ -461,6 +491,7 @@ marquee{
     .card-title{
         font-size: 1.1rem;
     }
+
     .card-description, .card-btn{
         font-size: 0.8rem;
     }
@@ -473,46 +504,53 @@ marquee{
     .stories{
         padding: 0px 0px 50px;
     }
+
     .stories-container{
         margin-top: 10px;
         justify-content: center;
         /* width: 100%; */
         height: auto;
     } 
+
     .left-story{
         display: none;
     }
+
     .right-story{
         width: 350px;
         /* height: 380px; */
         margin-top: 20px;
         gap: 10px;       
     }
+
     .right-story div{
         /* width: 170px; */
         /* height: 180px; */
     }
+
     .right-story img{
         width: 100%;
     }
+
     .story-subtitle{
         font-size: 10px;
         margin: 10px 10px 17px 16px;
     }
+
     .story-date{
         left: 15px;
         top: -15px;
         font-size: 10px;
         padding: 5px 10px;
     }
+
     .view-btn{
         font-size: 1rem;
         margin: 20px 0px;
-        text-align: center;
-        
+        text-align: center; 
     }
 
-     /* footer style */
+    /* footer style */
     footer{
         padding: 40px;
     }
@@ -522,12 +560,15 @@ marquee{
         gap: 25px;
         
     }
+
     .kids-education{
         width: 100%;
     }
+
     .education-title{
         font-size: 2.1rem;
     }
+
     .education-description{
         font-size: 1rem;
     }
