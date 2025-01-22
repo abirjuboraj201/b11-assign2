@@ -11,12 +11,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+/* body{
     overflow-x: hidden;
-}
+} */
 header{
     max-width:1440px;
-    margin: 20px auto;
+    margin: 0 auto;
 
 }
 
@@ -28,14 +28,12 @@ main{
   
 }
 footer{
-    max-width: 1540px;
+    max-width: 1440px;
     height: 100%;
     margin: 0px auto;
     background-color: #01ACFD;
     padding: 123px 228px 174px 140px;
 }
-
-
 
 /* shared styles */
 
@@ -58,10 +56,11 @@ footer{
 /* navigation bar styles */
 
 .navbar{
-    justify-content: space-around;
+    max-width: 1160px;
+    margin: 20px 140px;
+    justify-content: space-between;
     align-items: center;
-
-   
+  
 }
 .menu-bar{
     display: none;
@@ -118,13 +117,29 @@ hr{
     margin-top:10px;
 }
 
+marquee{
+    max-width: 1160px;
+    margin: 0 140px;
+    font-weight: 500;
+    font-size: 1rem;
+    color: orange;
+}
+.marquee-color-1{
+    color: #05D4DF;
+}
+.marquee-color-2{
+    color: aquamarine;
+}
+.marquee-color-3{
+    color: #01ACFD;
+}
 
 
 /* banner style */
 .banner-container{
-    margin-top: 50px;
-    padding: 0px 60px;
-    justify-content: space-around;
+    max-width: 1160px;
+    margin: 20px 140px;
+    justify-content: space-between;
     align-items: center;
     
 }
@@ -149,7 +164,8 @@ hr{
 /* curriculum section style */
 
 .card-container{
-    margin: 110px;
+    max-width: 1160px;
+    margin: 110px auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
@@ -158,16 +174,24 @@ hr{
     text-align: center;
     font-weight: bold;
     font-size: 2.8rem;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 .card{
-    max-width: 370px;
+    max-width: 360px;
     text-align: center;
-    padding: 60px 40px;
+    padding: 60px 20px;
     border-radius: 19px;
-    border: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     
+}
+.card-border-1{
+    border: 1px solid #DEF5FF;
+}
+.card-border-2{
+    border: 1px solid #FFF4DC;
+}
+.card-border-3{
+    border: 1px solid #F2E8FF;
 }
 #grad-1{
     background: linear-gradient(to bottom, #DEF5FF, #ffffff 40%);
@@ -205,7 +229,7 @@ hr{
 }
 
 .btn-container{
-    margin: 80px;
+    margin: 50px;
     text-align: center;
 }
 .left,.right{
@@ -222,22 +246,22 @@ hr{
 /* story section style */
 
 .stories{
-    padding: 100px 0px;
+    padding-bottom: 20px; 
     background: linear-gradient(to top, rgba(254, 163, 1, 0.3) 0%, rgba(255, 255, 255, 0.7) 100%), url('/assets/bg.png')
 }
 .stories-container{
+    max-width: 1160px;
     display: flex;
-    gap: 30px;
-    width: 1160px;
+    gap: 18px;
     height: 630px;
-    margin: 50px 130px;
+    margin: 50px auto;
    
    
 }
 
 
 .left-story{
-    width: 540px;
+    width: 100%;
     height: 100%;
     background-color: white;
     border-radius: 16px;
@@ -258,14 +282,14 @@ hr{
     font-weight: 500;
     font-size: 1rem;
     color: #666666;
-    margin: 0px 65px 30px 38px;
+    margin: 0px 50px 30px 38px;
 }
 
 .right-story{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 30px;
-    justify-content: center;
+    gap: 18px;
+    
 
 }
 .right-story img{
@@ -276,7 +300,8 @@ hr{
     background-color: white;
     border-radius: 16px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    height: calc(100% - 10px);
+    height: calc(100% - 5px);
+    position: relative;
 }
 .story-subtitle{
     margin: 24px 55px 34px 38px;
@@ -303,7 +328,8 @@ hr{
 }
 .view-btn{
     display: block;
-    margin: 80px auto;
+    text-align: center;
+    margin: 80px 0px;
 }
 
     
@@ -311,15 +337,15 @@ hr{
 
 /* footer style */
 .footer-container{
+    max-width: 1060px;
     display: flex;
     justify-content: space-between;
 }
 .kids-education{
-    width:400px ;
+    max-width: 400px ;
 }
 .education-header{
     align-items: center;
-    max-width: 300px;
     margin-bottom: 30px;
 }
 .education-title{
@@ -368,6 +394,7 @@ hr{
    
     /* navigation bar style */
     .navbar{
+        margin: 10px auto;
         justify-content: space-around;
         
     }
@@ -382,7 +409,9 @@ hr{
         visibility: visible;
         width: 100%;  
     }
-    
+    marquee{
+    display: none;
+    }
     /* banner style */
     .banner-container{
         flex-direction: column-reverse;
@@ -421,13 +450,10 @@ hr{
     }
     .card-container{
         grid-template-columns: repeat(1,1fr);
-        align-items: center;
         justify-items: center;
-        margin-top: 50px;
+        margin: 40px;
     }
-    .card{
-        width: 350px;
-    }
+  
     .card-title{
         font-size: 1.1rem;
     }
@@ -444,31 +470,30 @@ hr{
         padding: 0px 0px 50px;
     }
     .stories-container{
-        margin: 10px auto;
+        margin-top: 10px;
         justify-content: center;
-        width: 100%;
+        /* width: 100%; */
         height: auto;
     } 
     .left-story{
         display: none;
     }
     .right-story{
-        width: 360px;
-        height: 380px;
+        width: 350px;
+        /* height: 380px; */
         margin-top: 20px;
         gap: 10px;       
     }
     .right-story div{
-        width: 170px;
-        height: 180px;
+        /* width: 170px; */
+        /* height: 180px; */
     }
     .right-story img{
         width: 100%;
     }
     .story-subtitle{
-        width: 150px;
         font-size: 10px;
-        margin: 10px 0px 17px 16px;
+        margin: 10px 10px 17px 16px;
     }
     .story-date{
         left: 15px;
@@ -478,12 +503,14 @@ hr{
     }
     .view-btn{
         font-size: 1rem;
-        margin: 30px auto 10px;
+        margin: 20px 0px;
+        text-align: center;
+        
     }
 
      /* footer style */
     footer{
-        padding: 20px;
+        padding: 40px;
     }
 
     .footer-container{
