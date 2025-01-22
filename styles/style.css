@@ -23,8 +23,10 @@ header{
 main{
     max-width: 1440px;
     margin: 0 auto;
-    background-image: url("/assets/bg.png");
+    background-image: url("../assets/bg.png");
     background-repeat: no-repeat;
+    /* background-position:cover; */
+    background-size: auto;
   
 }
 footer{
@@ -247,7 +249,8 @@ marquee{
 
 .stories{
     padding-bottom: 20px; 
-    background: linear-gradient(to top, rgba(254, 163, 1, 0.3) 0%, rgba(255, 255, 255, 0.7) 100%), url('/assets/bg.png')
+    background: linear-gradient(to top, rgba(254, 163, 1, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%), url('../assets/bg.png');
+    background-size: auto;
 }
 .stories-container{
     max-width: 1160px;
@@ -356,7 +359,7 @@ marquee{
 .education-description{
     font-size: 1.25rem;
     color: #FFFFFF;
-    text-align: ;
+   
 }
 .about-title{
     font-weight: bold;
